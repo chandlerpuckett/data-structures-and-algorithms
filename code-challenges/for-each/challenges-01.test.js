@@ -10,11 +10,20 @@ Then, write a function named speaker that takes in a string and a callback funct
 
 const greeting = (word) => {
   // Solution code here...
+
+  return word.toUpperCase();
+
 };
 
 const speaker = (message, callback) => {
   // Solution code here...
+
+  const upper = callback(message);
+  return upper;
+
 };
+
+speaker('hello 301 students!', greeting);
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
