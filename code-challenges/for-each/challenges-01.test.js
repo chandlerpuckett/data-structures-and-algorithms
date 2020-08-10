@@ -43,11 +43,25 @@ Return the modified array.
 
 const addValues = (arr, value) => {
   // Solution code here...
+
+  arr.push(value);
+
 };
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+
+  for(let i=0; i<times; i++){
+    callback(arr,num);
+  }
+
+  return arr;
+
 };
+
+// test('It should add the number 8 to the array five times', () => {
+//   expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
+//   expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
 
 /* ------------------------------------------------------------------------------------------------
 
@@ -69,7 +83,15 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  
+
+
 };
+
+// test('It should only add the available items to the list', () => {
+//   expect(createList(inventory)).toStrictEqual(['apples', 'pears', 'bananas']);
+//   expect(createList(inventory).length).toStrictEqual(3);
+// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
