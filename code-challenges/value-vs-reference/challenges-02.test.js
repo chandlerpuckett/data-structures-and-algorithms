@@ -10,7 +10,23 @@ Write a function named raisedToTheThird that takes in an array of numbers and re
 
 const raisedToTheThird = (arr) => {
   // Solution code here...
-}
+
+  // create new array
+  // for each iterate through the array
+  // Math.pow ( array[i], power 3rd )
+  // push solution into new array
+  // return new array
+
+  const arraySolution = [];
+
+  arr.forEach(function(arr){
+    const solution = Math.pow(arr,3);
+    arraySolution.push(solution);
+  });
+
+  return arraySolution;
+
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -21,7 +37,12 @@ Write a function that appends ' The end.' to a string, and returns the modified 
 
 const appendTheEnd = (str) => {
   // Solution code here...
+
+  const addString = ' The end.';
+  return (str + addString);
+
 };
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 3
@@ -38,6 +59,16 @@ console.log(a) prints [1, 2, 3, 1]
 
 const appendFirstToLast = (arr) => {
   // Solution code here...
+
+  // takes in array
+  // for each iterate through array
+  // console.log the original array
+
+  const copyNum = arr[0];
+  arr.push(copyNum);
+
+  console.log(arr);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -57,6 +88,13 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+
+  // adds new property to the object called yearBorn
+  // yearBorn should be --> `year`
+
+  obj.yearBorn = year;
+  console.log(obj);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -74,6 +112,16 @@ console.log(people[1].isAuthor) prints true
 
 const setStatusAsAuthor = (people) => {
   // Solution code here...
+
+  // adds .isAuthor
+  // set .isAuthor to TRUE
+
+  people.forEach(function(people) {
+    people.isAuthor = true;
+  });
+
+  console.log(people);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -141,7 +189,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should add a property to every object in an array', () => {
     const a = [{ fullName: 'Octavia Butler' }, { fullName: 'Ray Bradbury' }, { fullName: 'Kurt Vonnegut' }];
     setStatusAsAuthor(a);
