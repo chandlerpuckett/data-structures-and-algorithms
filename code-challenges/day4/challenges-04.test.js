@@ -24,7 +24,10 @@ let $ = createSnippetWithJQuery(`
 
 const generateSubmitButton = () => {
   // Solution code here...
-}
+  const $button = $('<button></button>').attr('type', 'button').text('submit');
+  $('form').append($button);
+
+};
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
@@ -40,6 +43,13 @@ For example:
 
 const isNum = (input) => {
   // Solution code here...
+  const containsNumber = /\d/;
+
+  if (containsNumber.test(input)){
+    return true;
+  } else {
+    return false;
+  }
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -52,6 +62,10 @@ Return an array containing all the matches.
 
 const isCapitalized = (str) => {
   // Solution code here...
+  const containsCapital = str.match(/[A-Z][a-zA-Z]*/g);
+
+  return containsCapital || [];
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -140,10 +154,10 @@ describe('Testing challenge 1', () => {
   test('It should add a submit button to the DOM', () => {
     generateSubmitButton();
     expect($('button').text()).toStrictEqual('submit');
-  })
+  });
 });
 
-xdescribe('Testing challenge 2', () => {
+describe('Testing challenge 2', () => {
   test('It should return true if the input is a number', () => {
     expect(isNum(1234567890)).toBeTruthy();
     expect(isNum('12345')).toBeTruthy();
@@ -157,7 +171,7 @@ xdescribe('Testing challenge 2', () => {
   });
 });
 
-xdescribe('Testing challenge 3', () => {
+describe('Testing challenge 3', () => {
   test('It should only return words that begin with a capital letter', () => {
     const capitalResult = isCapitalized('We only want to Return the Words that begin With a capital Letter');
 
@@ -240,5 +254,5 @@ xdescribe('Testing challenge 8', () => {
 
 function createSnippetWithJQuery(html){
   return cheerio.load(html);
-};
+}
 
