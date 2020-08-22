@@ -78,10 +78,10 @@ const totalSum = (input) => {
   // Solution code here...
   let array = [];
   input.map(inside => {
-    array.push(inside.reduce((a,b) => a+b));
+    array.push(inside.reduce((a,b) => a +b));
   });
 
-  return array.reduce((a,b) => a+b);
+  return array.reduce((a,b) => a + b);
 
 };
 
@@ -184,6 +184,17 @@ let starWarsData = [{
 
 let findMaleAndFemale = (data) => {
   // Solution code here...
+
+  let arr = [];
+
+  data.map(function(val){
+    if (val.gender === 'male' || val.gender === 'female'){
+      arr.push (val.name);
+    }
+  });
+
+  return arr.join(' and ');
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -280,7 +291,7 @@ describe('Testing challenge 4', () => {
   });
 });
 
-xdescribe('Testing challenge 5', () => {
+describe('Testing challenge 5', () => {
   test('It should return only characters that are male or female', () => {
     expect(findMaleAndFemale(starWarsData)).toStrictEqual('Luke Skywalker and Darth Vader and Leia Organa');
     expect(findMaleAndFemale([{ name: 'person', gender: 'female' }, { gender: 'lol' }, { name: 'persontwo', gender: 'male' }])).toStrictEqual('person and persontwo');
