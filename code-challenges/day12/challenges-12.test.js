@@ -97,8 +97,18 @@ const errands = [
   }
 ];
 
-const howManyTreats = (arr) => {
+const howManyTreats = (arr,i) => {
   // Solution code here...
+
+  let val = 0;
+
+  arr.map( (inside) => {
+    val =+ inside.items[0].quantity;
+
+  });
+
+  console.log(val);
+
 };
 
 /* ------------------------------------------------------------------------------------------------
