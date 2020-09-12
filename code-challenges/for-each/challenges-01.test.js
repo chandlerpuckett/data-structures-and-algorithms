@@ -50,8 +50,9 @@ const addValues = (arr, value) => {
 
 const addNumbers = (num, arr, times, callback) => {
   // Solution code here...
+  callback = addValues;
 
-  for(let i=0; i<times; i++){
+  for (let i=0; i<times; i++){
     callback(arr,num);
   }
 
@@ -59,9 +60,6 @@ const addNumbers = (num, arr, times, callback) => {
 
 };
 
-// test('It should add the number 8 to the array five times', () => {
-//   expect(addNumbers(8, [], 5, addValues)).toStrictEqual([8, 8, 8, 8, 8]);
-//   expect(addNumbers(8, [], 5, addValues).length).toStrictEqual(5);
 
 /* ------------------------------------------------------------------------------------------------
 
