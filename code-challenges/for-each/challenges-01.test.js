@@ -81,14 +81,13 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let list = [];
 
+  availableItems.forEach(val => val.available ? list.push(val.name) : null);
+  return list;
 
 };
 
-// test('It should only add the available items to the list', () => {
-//   expect(createList(inventory)).toStrictEqual(['apples', 'pears', 'bananas']);
-//   expect(createList(inventory).length).toStrictEqual(3);
-// });
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 4
