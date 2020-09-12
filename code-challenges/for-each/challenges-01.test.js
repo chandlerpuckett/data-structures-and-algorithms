@@ -105,6 +105,16 @@ Return the resulting output array.
 
 const fizzbuzz = (arr) => {
   // Solution code here...
+  let ans = [];
+
+  arr.forEach(val => {
+    val % 3 === 0 && val % 5 === 0 ? ans.push('Fizz Buzz') :
+      val % 3 === 0 ? ans.push('Fizz') :
+        val % 5 === 0? ans.push('Buzz') : ans.push(val);
+  });
+
+  return ans;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
