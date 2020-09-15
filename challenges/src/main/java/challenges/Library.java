@@ -5,6 +5,7 @@ package challenges;
 
 public class Library {
     public boolean someLibraryMethod() {
+        System.out.println("HELLOOOOOO");
         return true;
     }
 }
