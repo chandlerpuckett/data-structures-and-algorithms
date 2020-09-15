@@ -16,12 +16,14 @@ public class ArrayReverse {
 
   private static void reverseArray (int[] test){
 
+    // https://www.java67.com/2016/10/3-ways-to-reverse-array-in-java-coding-interview-question.html
+    
     for (int i=0; i<test.length/2; i++){
       int temp = test[i];
       test[i] = test[test.length -i -1];
       test[test.length -i -1] = temp;
     }
-    
+
     System.out.println("SORTED ARRAY: ");
     for (int val : test){
       System.out.println(val);
