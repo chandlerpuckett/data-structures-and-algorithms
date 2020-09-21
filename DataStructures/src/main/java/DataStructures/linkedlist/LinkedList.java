@@ -21,6 +21,7 @@ public class LinkedList {
         }
     }
 
+//    add value to end of singly linked list
     public void addToEnd (int newVal){
 
         Node newNode = new Node (newVal);
@@ -35,6 +36,31 @@ public class LinkedList {
             this.tail.next = newNode;
         }
     }
+
+//    inserts new val before a specific node in a singly linked list
+    public void addBeforeValue (int value, int newVal){
+
+        Node newNode = new Node(newVal);
+
+        Node pointer = head;
+
+        for (int i=1; ;i++){
+            if (pointer == null){
+                break;
+            }
+            if (i == value){
+                newNode.next = pointer.next;
+                pointer.next = newNode;
+                break;
+            }
+            pointer = pointer.next;
+        }
+
+
+    }
+
+
+
 
 //    removes value from end of the list
 //    this removal is not efficient : O(n)
