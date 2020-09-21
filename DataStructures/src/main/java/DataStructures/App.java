@@ -16,8 +16,10 @@ public class App {
         newList.addToFront(6);
         newList.addToFront(12);
 
-        newList.addToEnd(13);
-        newList.addBeforeValue(2,10);
+//        newList.addToEnd(13);
+//        newList.addBeforeValue(2,10);
+
+        newList.addAfterValue(12,115);
 
 //        try {
 //            newList.removeFromEnd();

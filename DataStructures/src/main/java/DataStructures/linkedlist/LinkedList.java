@@ -55,12 +55,27 @@ public class LinkedList {
             }
             pointer = pointer.next;
         }
-
-
     }
 
+//    inserts new value after a specific node in a singly linked list
+    public void addAfterValue (int value, int newVal){
 
+        Node newNode = new Node(newVal);
 
+        Node pointer = head;
+
+        for (int i=1; ;i++){
+            if (pointer == null){
+                break;
+            }
+            if (i-1 == value){
+                newNode.next = pointer.next;
+                pointer.next = newNode;
+                break;
+            }
+            pointer = pointer.next;
+        }
+    }
 
 //    removes value from end of the list
 //    this removal is not efficient : O(n)
