@@ -15,7 +15,6 @@ public class Node {
     }
 
 
-
     public void insert (String data){
 
 // --- Define a method called insert which takes any value as an argument
