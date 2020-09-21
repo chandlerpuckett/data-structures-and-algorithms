@@ -21,6 +21,21 @@ public class LinkedList {
         }
     }
 
+    public void addToEnd (int newVal){
+
+        Node newNode = new Node (newVal);
+
+        if (this.head == null) {
+
+            this.head = newNode;
+            this.tail = this.head;
+
+        } else {
+
+            this.tail.next = newNode;
+        }
+    }
+
 //    removes value from end of the list
 //    this removal is not efficient : O(n)
 //    efficiency should be O(1)
@@ -68,6 +83,5 @@ class Node {
     protected Node (int value){
         this.value = value;
     }
-
 }
 

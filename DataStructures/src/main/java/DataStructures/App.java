@@ -16,11 +16,13 @@ public class App {
         newList.addToFront(6);
         newList.addToFront(12);
 
-        try {
-            newList.removeFromEnd();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        newList.addToEnd(13);
+
+//        try {
+//            newList.removeFromEnd();
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//        }
 
         System.out.println(newList);
     }
