@@ -3,12 +3,25 @@
  */
 package DataStructures;
 
+import DataStructures.linkedlist.LinkedList;
+
 public class App {
     public String getGreeting() {
         return "Hello world.";
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        LinkedList newList = new LinkedList();
+        newList.addToFront(2);
+        newList.addToFront(6);
+        newList.addToFront(12);
+
+        try {
+            newList.removeFromEnd();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        System.out.println(newList);
     }
 }
