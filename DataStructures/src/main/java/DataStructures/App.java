@@ -15,11 +15,17 @@ public class App {
         newList.addToFront(2);
         newList.addToFront(6);
         newList.addToFront(12);
+        newList.addToFront(23);
+        newList.addToFront(115);
 
 //        newList.addToEnd(13);
 //        newList.addBeforeValue(2,10);
 
         newList.addAfterValue(12,115);
+
+//        returns nth value from end:
+        newList.nthValueFromEnd(3);
+
 
 //        try {
 //            newList.removeFromEnd();

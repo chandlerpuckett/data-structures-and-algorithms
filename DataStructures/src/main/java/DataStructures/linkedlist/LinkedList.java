@@ -57,6 +57,12 @@ public class LinkedList {
         }
     }
 
+//    ------ find kth value from end of singly linked list ----- //
+    public void nthValueFromEnd (int n){
+
+    }
+
+
 //    inserts new value after a specific node in a singly linked list
     public void addAfterValue (int value, int newVal){
 
