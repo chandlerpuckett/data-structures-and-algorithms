@@ -58,9 +58,26 @@ public class LinkedList {
     }
 
 //    ------ find kth value from end of singly linked list ----- //
-    public void nthValueFromEnd (int n){
+    public int nthValueFromEnd (int n) throws Exception {
+        Node p1 = head;
+        Node p2 = head;
 
+        for (int j=0; j < n; ++j){
+            if (p2 == null){
+                throw new Exception("Exception");
+            }
+
+            p2 = p2.next;
+        }
+
+        while (p2.next != null){
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        return p1.value;
     }
+
 
 
 //    inserts new value after a specific node in a singly linked list

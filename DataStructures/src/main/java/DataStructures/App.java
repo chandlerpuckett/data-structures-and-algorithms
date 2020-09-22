@@ -10,7 +10,7 @@ public class App {
         return "Hello world.";
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         LinkedList newList = new LinkedList();
         newList.addToFront(2);
         newList.addToFront(6);
@@ -20,19 +20,12 @@ public class App {
 
 //        newList.addToEnd(13);
 //        newList.addBeforeValue(2,10);
-
-        newList.addAfterValue(12,115);
-
-//        returns nth value from end:
-        newList.nthValueFromEnd(3);
-
-
-//        try {
-//            newList.removeFromEnd();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
+//        newList.addAfterValue(12,115);
 
         System.out.println(newList);
+
+//        returns nth value from end:
+
+        System.out.println(newList.nthValueFromEnd(0));
     }
 }
