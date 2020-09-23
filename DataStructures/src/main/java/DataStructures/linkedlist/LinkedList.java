@@ -100,6 +100,45 @@ public class LinkedList {
         }
     }
 
+//    interleaves two lists, alternating nodes like a zipper
+    public LinkedList zipTwoLists (LinkedList l1, LinkedList l2){
+
+       LinkedList result = new LinkedList();
+
+       Node n1 = l1.head;
+       Node n2 = l2.head;
+
+       result.addToFront(interleave(n1,n2).value);
+       return result;
+
+    }
+
+    public Node interleave (Node n1, Node n2){
+
+        if (n1 == null){return n2;}
+        if (n2 == null){return n1;}
+
+//  create new linked list in here then return that linked list
+        Node result = n1;
+
+        while (n1 != null && n2 != null){
+            Node temp1 = n1.next;
+            Node temp2 = n2.next;
+
+            if (temp1.next != null){
+                n2.next = temp1.next;
+            }
+
+            temp1.next = n2;
+
+            n1 = temp1;
+            n2 = temp2;
+        }
+
+        return result;
+
+    }
+
 //    removes value from end of the list
 //    this removal is not efficient : O(n)
 //    efficiency should be O(1)
