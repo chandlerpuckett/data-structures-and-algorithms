@@ -11,21 +11,26 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
-        LinkedList newList = new LinkedList();
-        newList.addToFront(2);
-        newList.addToFront(6);
-        newList.addToFront(12);
-        newList.addToFront(23);
-        newList.addToFront(115);
+        LinkedList L1 = new LinkedList();
+        LinkedList L2 = new LinkedList();
 
-//        newList.addToEnd(13);
-//        newList.addBeforeValue(2,10);
-//        newList.addAfterValue(12,115);
+        L1.addToFront(2);
+        L1.addToFront(3);
+        L1.addToFront(1);
 
-        System.out.println(newList);
+        L2.addToFront(4);
+        L2.addToFront(9);
+        L2.addToFront(5);
+
+
+        System.out.println(L1);
+        System.out.println(L2);
+        System.out.println();
+
+
+
 
 //        returns nth value from end:
 
-        System.out.println(newList.nthValueFromEnd(0));
     }
 }
