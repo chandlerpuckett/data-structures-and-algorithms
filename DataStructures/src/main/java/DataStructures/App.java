@@ -4,6 +4,7 @@
 package DataStructures;
 
 import DataStructures.linkedlist.LinkedList;
+import DataStructures.stacksandqueues.Stack;
 
 public class App {
     public String getGreeting() {
@@ -22,6 +23,8 @@ public class App {
         L2.addToFront(9);
         L2.addToFront(5);
 
+        Stack newStack = new Stack(10);
+
 
 //        System.out.println(L1);
 //        System.out.println(L2);
@@ -29,7 +32,9 @@ public class App {
 
         LinkedList combo = new LinkedList();
         combo.mergeRecursive(L1,L2);
+
         System.out.println(combo);
+        System.out.println(newStack);
 
 
 //        returns nth value from end:
