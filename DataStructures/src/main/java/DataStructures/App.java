@@ -23,11 +23,13 @@ public class App {
         L2.addToFront(5);
 
 
-        System.out.println(L1);
-        System.out.println(L2);
-        System.out.println();
+//        System.out.println(L1);
+//        System.out.println(L2);
+//        System.out.println();
 
-
+        LinkedList combo = new LinkedList();
+        combo.mergeRecursive(L1,L2);
+        System.out.println(combo);
 
 
 //        returns nth value from end:
