@@ -13,6 +13,8 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
+
+//        ----- Linked Lists -----
         LinkedList L1 = new LinkedList();
         LinkedList L2 = new LinkedList();
 
@@ -24,7 +26,7 @@ public class App {
         L2.addToFront(9);
         L2.addToFront(5);
 
-//        ----- Queue functions -----
+//        ----- Queues -----
         Queue newQueue = new Queue();
         newQueue.enQueue(7);
         newQueue.enQueue(8);
@@ -33,12 +35,19 @@ public class App {
         newQueue.deQueue();
         int peekVal = newQueue.peek();
 
-        System.out.println(newQueue);
+        System.out.println("Queue : " + newQueue);
         System.out.println("peek: " + peekVal);
         System.out.println(newQueue.isEmpty());
+        System.out.println();
 
-//        ----- Stack functions -----
-        
+//        ----- Stacks -----
+        Stack newStack = new Stack();
+        newStack.push(10);
+        newStack.push(24);
+        newStack.push(666);
 
+        System.out.println("Stack : " + newStack);
+        System.out.println("peek : " + newStack.peek() );
+        System.out.println("Pop (666) : " + newStack.pop() );
     }
 }
