@@ -11,6 +11,52 @@ Tests:
     7. empty stack throws exception
  */
 
+import org.junit.Test;
+
 public class StackTest {
+
+//    1.
+    @Test
+    public void testPushStack (){
+
+    }
+
+//    2.
+    @Test
+    public void testPushMultiple () {
+
+    }
+
+//    3.
+    @Test
+    public void testPop () {
+
+    }
+
+//    4.
+    @Test
+    public void testPopUntilEmpty () {
+
+    }
+
+//    5.
+    @Test
+    public void testPeek () {
+
+    }
+
+//    6.
+    @Test
+    public void testInitEmptyStack () {
+
+    }
+
+//    7.
+    @Test
+    public void testException () {
+
+    }
+
+
 
 }
