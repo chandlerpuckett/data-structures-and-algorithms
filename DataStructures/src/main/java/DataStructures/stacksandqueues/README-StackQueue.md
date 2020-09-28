@@ -1,11 +1,21 @@
 # Stacks and Queues
-<!-- Short summary or background information -->
+Building Stacks and Queue classes with various methods
 
 ## Challenge
-<!-- Description of the challenge -->
+Implementing stacks & Queues
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Most of the mutator methods have a Time: O(1) & Space O(n)
 
 ## API
-<!-- Description of each method publicly available to your Stack and Queue-->
+Stack:
+- push 
+- pop
+- peek
+- isEmpty
+
+Queue: 
+- enQueue
+- deQueue
+- peek
+- isEmpty
