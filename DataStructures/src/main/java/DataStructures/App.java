@@ -57,11 +57,11 @@ public class App {
 
         psuedo.enQueue(20);
         System.out.println(psuedo);
+        System.out.println("Top of Stack: " + psuedo.deQueue());
 
 //        System.out.println("Stack : " + newStack);
 //        System.out.println("peek : " + newStack.peek() );
 //        System.out.println("Pop (666) : " + newStack.pop() );
-
 
     }
 }
