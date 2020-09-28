@@ -139,6 +139,32 @@ public class LinkedList {
 
     }
 
+//    RECURSIVE MERGE
+    public static Node mergeRecursive (LinkedList l1, LinkedList l2){
+//        return mergeRecursive(l1.head, l2.head);
+        return l1.head;
+    }
+
+    private static Node mergeRecursive(Node n1, Node n2){
+        if (n1 == null) return n2;
+        if (n2 == null) return n1;
+
+        Node temp1 = n1.next;
+        Node temp2 = n2.next;
+        n1.next = n2;
+        n2.next = mergeRecursive(temp1,temp2);
+
+        return n1;
+    }
+
+//    BEST MERGE
+    private static Node mergeRecursiveBest (Node n1, Node n2){
+        if (n1 == null) return n2;
+
+        n1.next = mergeRecursiveBest(n2, n1.next);
+        return n1;
+    }
+
 //    removes value from end of the list
 //    this removal is not efficient : O(n)
 //    efficiency should be O(1)
@@ -169,7 +195,7 @@ public class LinkedList {
 
     }
 
-    public String toString (Node current){
+    private String toString (Node current){
 //  base case -- stops
         if (current == null){
             return "null";
@@ -183,7 +209,7 @@ class Node {
     int value;
     Node next;
 
-    protected Node (int value){
+    Node (int value){
         this.value = value;
     }
 }

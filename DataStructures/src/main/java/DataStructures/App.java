@@ -4,6 +4,8 @@
 package DataStructures;
 
 import DataStructures.linkedlist.LinkedList;
+import DataStructures.stacksandqueues.Queue;
+import DataStructures.stacksandqueues.Stack;
 
 public class App {
     public String getGreeting() {
@@ -11,6 +13,8 @@ public class App {
     }
 
     public static void main(String[] args) throws Exception {
+
+//        ----- Linked Lists -----
         LinkedList L1 = new LinkedList();
         LinkedList L2 = new LinkedList();
 
@@ -22,15 +26,28 @@ public class App {
         L2.addToFront(9);
         L2.addToFront(5);
 
+//        ----- Queues -----
+        Queue newQueue = new Queue();
+        newQueue.enQueue(7);
+        newQueue.enQueue(8);
+        newQueue.enQueue(9);
+        newQueue.enQueue(24);
+        newQueue.deQueue();
+        int peekVal = newQueue.peek();
 
-        System.out.println(L1);
-        System.out.println(L2);
+        System.out.println("Queue : " + newQueue);
+        System.out.println("peek: " + peekVal);
+        System.out.println(newQueue.isEmpty());
         System.out.println();
 
+//        ----- Stacks -----
+        Stack newStack = new Stack();
+        newStack.push(10);
+        newStack.push(24);
+        newStack.push(666);
 
-
-
-//        returns nth value from end:
-
+        System.out.println("Stack : " + newStack);
+        System.out.println("peek : " + newStack.peek() );
+        System.out.println("Pop (666) : " + newStack.pop() );
     }
 }
