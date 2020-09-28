@@ -209,7 +209,7 @@ class Node {
     int value;
     Node next;
 
-    protected Node (int value){
+    Node (int value){
         this.value = value;
     }
 }

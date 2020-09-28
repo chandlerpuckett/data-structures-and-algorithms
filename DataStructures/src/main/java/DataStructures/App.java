@@ -4,6 +4,7 @@
 package DataStructures;
 
 import DataStructures.linkedlist.LinkedList;
+import DataStructures.stacksandqueues.Queue;
 import DataStructures.stacksandqueues.Stack;
 
 public class App {
@@ -23,21 +24,21 @@ public class App {
         L2.addToFront(9);
         L2.addToFront(5);
 
-        Stack newStack = new Stack(10);
+//        ----- Queue functions -----
+        Queue newQueue = new Queue();
+        newQueue.enQueue(7);
+        newQueue.enQueue(8);
+        newQueue.enQueue(9);
+        newQueue.enQueue(24);
+        newQueue.deQueue();
+        int peekVal = newQueue.peek();
 
+        System.out.println(newQueue);
+        System.out.println("peek: " + peekVal);
+        System.out.println(newQueue.isEmpty());
 
-//        System.out.println(L1);
-//        System.out.println(L2);
-//        System.out.println();
-
-        LinkedList combo = new LinkedList();
-        combo.mergeRecursive(L1,L2);
-
-        System.out.println(combo);
-        System.out.println(newStack);
-
-
-//        returns nth value from end:
+//        ----- Stack functions -----
+        
 
     }
 }

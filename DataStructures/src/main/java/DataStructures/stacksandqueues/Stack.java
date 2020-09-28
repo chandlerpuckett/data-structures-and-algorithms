@@ -16,6 +16,7 @@ public class Stack {
         Node node = new Node (value);
         node.next = top;
         top = node;
+
     }
 
     public int pop () {
@@ -34,3 +35,4 @@ public class Stack {
         return top == null;
     }
 }
+
