@@ -99,8 +99,8 @@ public class StackTest {
 //    7.
     @Test
     public void testException () throws Exception {
-//  ---- not working ----
-        
+//      ---- not working ----
+
     }
 
 
