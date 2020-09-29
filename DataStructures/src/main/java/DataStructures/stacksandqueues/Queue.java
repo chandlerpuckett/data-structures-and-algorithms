@@ -14,15 +14,15 @@ public class Queue {
 
         Node newNode = new Node(value);
 
+        if (front == null){
+            front = newNode;
+        }
+
         if (tail != null){
             tail.next = newNode;
         }
 
         tail = newNode;
-
-        if (front == null){
-            front = newNode;
-        }
     }
 
     public int deQueue () throws Exception {

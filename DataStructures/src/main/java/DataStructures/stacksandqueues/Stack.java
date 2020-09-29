@@ -1,6 +1,6 @@
 package DataStructures.stacksandqueues;
 
-public class Stack {
+public class Stack <Generic> {
 
     private Node top;
     private Node bottom;
