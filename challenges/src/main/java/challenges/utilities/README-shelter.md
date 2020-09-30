@@ -12,4 +12,4 @@ DeQ returns a specified animal object from the shelter.
 - Space: O(n)
 
 ## Solution
-![whiteboardImg](../../../resources/shelter.png)
+![whiteboardImg](../../../resources/shelter.png)    

@@ -2,9 +2,9 @@ package challenges.utilities;
 
 public class App {
     public static void main(String[] args) {
-        Animal tater = new Dog();
-        Animal wilbur = new Dog();
-        Animal garfield = new Cat();
+        Animal tater = new Dog("tater");
+        Animal wilbur = new Dog("wilbur");
+        Animal garfield = new Cat("garfield");
 
         AnimalShelter shelter = new AnimalShelter();
 
