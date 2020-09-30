@@ -18,7 +18,6 @@ public class AnimalShelter {
         if (front == null){
             front = newNode;
         }
-
     }
 
     public class Node <T> {
