@@ -18,7 +18,6 @@ public class AnimalShelter {
         if (front == null){
             front = newNode;
         }
-
     }
 
     public class Node <T> {
@@ -38,7 +37,7 @@ public class AnimalShelter {
 //      out {2} -> {6} -> {12} -> null
 
     }
-//
+
     private String toString (Node current){
 //  base case -- stops
 
