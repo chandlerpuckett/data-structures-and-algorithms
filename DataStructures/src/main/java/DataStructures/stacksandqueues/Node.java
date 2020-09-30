@@ -1,11 +1,11 @@
 package DataStructures.stacksandqueues;
 
-public class Node {
+public class Node <Generic> {
 
     int value;
-    Node next;
+    Node<Generic> next;
 
-    Node (int value){
+    Node (Generic value){
         this.value = value;
     }
 

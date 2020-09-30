@@ -6,6 +6,7 @@ package DataStructures;
 import DataStructures.linkedlist.LinkedList;
 import DataStructures.stacksandqueues.Queue;
 import DataStructures.stacksandqueues.Stack;
+import DataStructures.stacksandqueues.PsuedoQueue;
 
 public class App {
     public String getGreeting() {
@@ -35,19 +36,32 @@ public class App {
         newQueue.deQueue();
         int peekVal = newQueue.peek();
 
-        System.out.println("Queue : " + newQueue);
-        System.out.println("peek: " + peekVal);
-        System.out.println(newQueue.isEmpty());
-        System.out.println();
+//        System.out.println("Queue : " + newQueue);
+//        System.out.println("peek: " + peekVal);
+//        System.out.println(newQueue.isEmpty());
+//        System.out.println();
 
 //        ----- Stacks -----
-        Stack newStack = new Stack();
-        newStack.push(10);
-        newStack.push(24);
-        newStack.push(666);
+//        Stack newStack = new Stack();
+//        newStack.push(10);      // head
+//        newStack.push(24);      // ---
+//        newStack.push(666);     // tail
 
-        System.out.println("Stack : " + newStack);
-        System.out.println("peek : " + newStack.peek() );
-        System.out.println("Pop (666) : " + newStack.pop() );
+//        ----- PseudoQueue -----
+        PsuedoQueue psuedo = new PsuedoQueue();
+
+        psuedo.enQueue(5);
+        psuedo.enQueue(10);
+        psuedo.enQueue(15);
+        System.out.println(psuedo);
+
+        psuedo.enQueue(20);
+        System.out.println(psuedo);
+        System.out.println("Top of Stack: " + psuedo.deQueue());
+
+//        System.out.println("Stack : " + newStack);
+//        System.out.println("peek : " + newStack.peek() );
+//        System.out.println("Pop (666) : " + newStack.pop() );
+
     }
 }
