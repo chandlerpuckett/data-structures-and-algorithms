@@ -9,7 +9,7 @@ DeQ returns a specified animal object from the shelter.
 
 - EnQ Efficiency: O(1)
 - DeQ Efficiency: O(n)
-- Space: O(1)
+- Space: O(n)
 
 ## Solution
 ![whiteboardImg](../../../resources/shelter.png)
