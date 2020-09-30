@@ -5,7 +5,7 @@ import java.util.Stack;
 
 public class MultiBracketValidation {
 
-//    assistance from leet code: https://www.programcreek.com/2012/12/leetcode-valid-parentheses-java/
+//    assistance from leet code: https://www.programcreek.com/2012/12/leetcode-valid-parentheses-java
 
     public static boolean isValid (String s){
         HashMap<Character, Character> map = new HashMap<Character, Character>();
@@ -27,10 +27,7 @@ public class MultiBracketValidation {
                     return false;
                 }
             }
-
         }
-
         return stack.empty();
-
     }
 }
