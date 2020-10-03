@@ -6,7 +6,7 @@ public class LinkedList {
     public Node tail = null;
 
     // head first -- adds value to front of linked list
-    public void addToFront (int newVal) {
+    public void insert (int newVal) {
 
         Node newNode = new Node (newVal);
 
@@ -108,7 +108,7 @@ public class LinkedList {
        Node n1 = l1.head;
        Node n2 = l2.head;
 
-       result.addToFront(interleave(n1,n2).value);
+       result.insert(interleave(n1,n2).value);
        return result;
 
     }
@@ -202,15 +202,6 @@ public class LinkedList {
         }
         return String.format("{%d} -> %s", current.value, toString(current.next));
 
-    }
-}
-
-class Node {
-    int value;
-    Node next;
-
-    Node (int value){
-        this.value = value;
     }
 }
 

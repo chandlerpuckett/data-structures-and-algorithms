@@ -6,7 +6,7 @@ public class Node <Generic> {
     Node<Generic> next;
 
     Node (Generic value){
-        this.value = value;
+        this.value = (int) value;
     }
 
 }
