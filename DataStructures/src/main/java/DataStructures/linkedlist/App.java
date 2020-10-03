@@ -18,5 +18,9 @@ public class App {
 
         System.out.println("Head: ");
         System.out.println(list1.head.value);
+
+//        --- includes test ---
+        System.out.println("Includes (8) : " + list1.includes(8));
+        System.out.println("Includes (6) : " + list1.includes(6));
     }
 }
