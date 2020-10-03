@@ -5,8 +5,8 @@ public class LinkedList {
     public Node head = null;
     public Node tail = null;
 
-    // head first -- adds value to front of linked list
-    public void addToFront (int newVal) {
+//    ----- head first -> adds value to front of linked list
+    public void insert (int newVal) {
 
         Node newNode = new Node (newVal);
 
@@ -21,7 +21,21 @@ public class LinkedList {
         }
     }
 
-//    add value to end of singly linked list
+//    ----- checks for a value in the linked list -----
+    public boolean includes (int value){
+        Node p1 = this.head;
+
+        while (p1 != null){
+            if (p1.value == value){
+                return true;
+            } else {
+                p1 = p1.next;
+            }
+        }
+        return false;
+    }
+
+//    ----- add value to end of singly linked list -----
     public void addToEnd (int newVal){
 
         Node newNode = new Node (newVal);
@@ -100,6 +114,7 @@ public class LinkedList {
         }
     }
 
+
 //    interleaves two lists, alternating nodes like a zipper
     public LinkedList zipTwoLists (LinkedList l1, LinkedList l2){
 
@@ -108,7 +123,7 @@ public class LinkedList {
        Node n1 = l1.head;
        Node n2 = l2.head;
 
-       result.addToFront(interleave(n1,n2).value);
+       result.insert(interleave(n1,n2).value);
        return result;
 
     }
@@ -202,15 +217,6 @@ public class LinkedList {
         }
         return String.format("{%d} -> %s", current.value, toString(current.next));
 
-    }
-}
-
-class Node {
-    int value;
-    Node next;
-
-    Node (int value){
-        this.value = value;
     }
 }
 
