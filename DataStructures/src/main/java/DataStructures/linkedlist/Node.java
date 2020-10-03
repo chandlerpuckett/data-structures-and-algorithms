@@ -1,7 +1,7 @@
 package DataStructures.linkedlist;
 
 public class Node {
-    int value;
+    public int value;
     Node next;
 
     Node(int value) {
