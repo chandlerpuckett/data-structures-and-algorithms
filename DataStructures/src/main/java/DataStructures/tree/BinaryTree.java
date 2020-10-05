@@ -41,7 +41,27 @@ public class BinaryTree {
         return current;
     }
 
-//  ----- Depth First Search Methods -----
+//    ----- find maximum value -----
+    public int findMaxVal (){
+        int max = Integer.MIN_VALUE;
+        return findMaxValUtil(root,max);
+    }
+
+    private int findMaxValUtil (Node current,int max){
+        // base case -> if node is empty return current max val
+        if(current == null) return max;
+
+        if (current.value > max)
+            max = current.value;
+
+        return current.value > max
+                ? findMaxValUtil(current.left,max)
+                : findMaxValUtil(current.right,max);
+
+    }
+
+
+    //  ----- Depth First Search Methods -----
 //  ----- Pre Order -----
     public ArrayList<Integer> preOrder (Node node){
         ArrayList<Integer> arrPre = new ArrayList<>();
