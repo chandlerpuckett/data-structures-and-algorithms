@@ -11,6 +11,9 @@ public class App {
         System.out.println("Post Order: " + newTree.postOrder(newTree.root));
         System.out.println();
 
+        System.out.println("Find max value [newTree] (9) : " + newTree.findMaxVal());
+        System.out.println();
+
         BinarySearchTree bstTree = new BinarySearchTree();
         bstTree.add(5);
         bstTree.add(10);

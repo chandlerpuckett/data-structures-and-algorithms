@@ -36,6 +36,5 @@ public class BinarySearchTree extends BinaryTree {
         return value < current.value
                 ? contains(current.left, value)
                 : contains(current.right,value);
-
     }
 }
