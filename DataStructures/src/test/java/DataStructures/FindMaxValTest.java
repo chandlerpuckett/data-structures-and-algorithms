@@ -40,11 +40,10 @@ public class FindMaxValTest {
     public void reallyBigTree(){
         BinaryTree tree = new BinaryTree();
 
-        for (int i=0; i <= 10000; i++){
+        for (int i = -1000; i <= 10000; i++){
             tree.add(i);
         }
 
         assertEquals("MAX=10k really big tree",10000, tree.findMaxVal());
-
     }
 }
