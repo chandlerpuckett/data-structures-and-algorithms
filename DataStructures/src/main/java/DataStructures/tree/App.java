@@ -25,7 +25,5 @@ public class App {
         System.out.println("Contains? (8) " + bstTree.contains(bstTree.root, 8));
         System.out.println("Contains? (21) " + bstTree.contains(bstTree.root, 21));
 
-
-
     }
 }
