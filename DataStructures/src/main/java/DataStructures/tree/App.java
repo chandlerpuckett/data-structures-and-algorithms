@@ -12,6 +12,8 @@ public class App {
         System.out.println();
 
         System.out.println("Find max value [newTree] (9) : " + newTree.findMaxVal());
+        System.out.print("BFS traversal: "); newTree.bfsTraverse();
+        System.out.println();
         System.out.println();
 
         BinarySearchTree bstTree = new BinarySearchTree();
