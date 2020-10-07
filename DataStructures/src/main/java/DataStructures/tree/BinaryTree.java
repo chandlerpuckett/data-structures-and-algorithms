@@ -1,6 +1,8 @@
 package DataStructures.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class BinaryTree {
     public Node root;
@@ -58,6 +60,22 @@ public class BinaryTree {
                 ? findMaxValUtil(current.left,max)
                 : findMaxValUtil(current.right,max);
 
+    }
+
+//    ----- Breadth First -----
+    public void bfsTraverse(){
+        ArrayList<Integer> arr = new ArrayList<>();
+
+        Queue<Node> queue = new LinkedList<Node>();
+        if (root != null) queue.add(root);
+
+        while (!queue.isEmpty()){
+            Node node = queue.remove();
+            arr.add(node.value);
+            if(node.left != null) queue.add(node.left);
+            if(node.right != null) queue.add(node.right);
+        }
+        System.out.println(arr);
     }
 
 
