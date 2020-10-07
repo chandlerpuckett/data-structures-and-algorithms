@@ -7,6 +7,8 @@ Expanding on the Binary Tree class, implement a method that uses a "breadth-firs
 to traversing a Binary Tree & returning an array of values.
 
 ## Approach & Efficiency
+Iterative approach using a Queue.
+
 - Time: O(h)
 - Space: O(n)
 
