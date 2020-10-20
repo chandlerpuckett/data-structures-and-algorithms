@@ -1,6 +1,6 @@
 package challenges.utilities;
 
-class MergeSort {
+public class MergeSort {
     void merge(int arr[], int l, int m, int r)
     {
         int n1 = m - l + 1;
@@ -43,7 +43,7 @@ class MergeSort {
         }
     }
 
-    void sort(int arr[], int l, int r)
+    public void sort(int arr[], int l, int r)
     {
         if (l < r) {
             int m = (l + r) / 2;
