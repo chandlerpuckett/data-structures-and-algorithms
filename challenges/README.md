@@ -6,6 +6,7 @@
 - [Challenge 12 : FIFO Animal Shelter](./src/main/java/challenges/utilities/App.java)
 - [Challenge 26 : Selection Sort](./src/main/java/challenges/utilities/SelectionSort.java)
 - [Challenge 27 : Merge Sort](./src/main/java/challenges/utilities/MergeSort.java)
+- [Challenge 28 : Quick Sort](./src/main/java/challenges/utilities/QuickSort.java)
 
 
 
