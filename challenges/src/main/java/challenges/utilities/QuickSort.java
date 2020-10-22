@@ -2,21 +2,33 @@ package challenges.utilities;
 
 public class QuickSort {
     public void quickSort (int[] arr, int left, int right){
-        int pos = partition(arr, left, right);
+        if (left < right){
+            int pos = partition(arr, left, right);
 
-        quickSort(arr, left, pos - 1);
-        quickSort(arr, pos + 1, right);
+            quickSort(arr, left, pos - 1);
+            quickSort(arr, pos + 1, right);
+        }
     }
 
-    public int partition (int[] arr, int left, int right){
+    private int partition (int[] arr, int left, int right){
+
         int pivot = arr[right];
+        int i = left - 1;
 
-        int low =
+        for (int j=left; j < right; j++){
+            if (arr[j] <= pivot){
+                i++;
 
-        return ;
-    }
+                int swap = arr[i];
+                arr[i] = arr[j];
+                arr[j] = swap;
+            }
+        }
 
-    public void swap (int[] arr, int idx, int low){
+        int swap = arr[i+1];
+        arr[i+1] = arr[right];
+        arr[right] = swap;
 
+        return i + 1;
     }
 }
