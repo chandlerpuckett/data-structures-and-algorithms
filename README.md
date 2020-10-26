@@ -6,4 +6,5 @@
 - [Challenge 26 : Selection Sort](challenge401/src/main/java/codeChallenges/utilities/SelectionSort.java)
 - [Challenge 27 : Merge Sort](challenge401/src/main/java/codeChallenges/utilities/MergeSort.java)
 - [Challenge 28 : Quick Sort](challenge401/src/main/java/codeChallenges/utilities/QuickSort.java)
+- [Challenge 31 : Repeated Word](challenge401/src/main/java/datastructures/repeatedword/RepeatedWord.java)
 
