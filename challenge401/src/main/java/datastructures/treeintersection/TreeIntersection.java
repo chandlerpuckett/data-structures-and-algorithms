@@ -1,10 +1,7 @@
 package datastructures.treeintersection;
 import datastructures.tree.*;
-
-
 import java.util.ArrayList;
 import java.util.HashMap;
-
 
 public class TreeIntersection {
     public ArrayList<Integer> treeIntersection (BinaryTree t1, BinaryTree t2){
@@ -24,8 +21,6 @@ public class TreeIntersection {
 
         return intersections;
     }
-
-
 }
 
 
