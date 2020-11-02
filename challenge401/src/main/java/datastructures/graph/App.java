@@ -28,6 +28,6 @@ public class App {
         System.out.println();
 
         // BFS traversal
-        ourGraph.BFS(0);
+        System.out.println(ourGraph.BFS(0));
     }
 }

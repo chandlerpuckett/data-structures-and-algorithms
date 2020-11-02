@@ -8,7 +8,7 @@ import java.util.LinkedList;
 
 public class Graph {
     private int V; // no. of vertices
-    private LinkedList<Integer> adj[];
+    private LinkedList<Integer> adj[]; // list of adjacent edges
     private HashSet<Vertex> nodes;
 
     public Graph(int v){
@@ -46,17 +46,18 @@ public class Graph {
     }
 
 
-    public void BFS (int s){
+    public LinkedList<Integer> BFS (int s){
         boolean[] visited = new boolean[V];
 
         LinkedList<Integer> queue = new LinkedList<Integer>();
+        LinkedList<Integer> solution = new LinkedList<>();
 
         visited[s] = true;
         queue.add(s);
 
         while (queue.size() != 0){
             s = queue.poll();
-            System.out.print("{" + s + "}"  + " -> ");
+            solution.add(s);
 
             for (int n : adj[s]) {
 
@@ -67,6 +68,7 @@ public class Graph {
             }
         }
 
+        return solution;
     }
 }
 

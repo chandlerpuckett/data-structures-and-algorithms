@@ -6,7 +6,7 @@ public class Node {
     Node tail;
     Node next;
 
-    Node(int value) {
+    public Node(int value) {
         this.value = value;
     }
 }
