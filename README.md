@@ -10,3 +10,4 @@
 - [Challenge 32 : Common Values in 2 Binary Trees](challenge401/src/main/java/datastructures/treeintersection/TreeIntersection.java)
 - [Challenge 33 : LeftJoin](challenge401/src/main/java/datastructures/leftjoin)
 - [Challenge 35 : Graph](challenge401/src/main/java/datastructures/graph)
+- [Challenge 36 : BFS Graph Traversal](challenge401/src/main/java/datastructures/graph/Graph.java)
