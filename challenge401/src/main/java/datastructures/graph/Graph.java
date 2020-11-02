@@ -1,17 +1,34 @@
 package datastructures.graph;
 
+import org.checkerframework.checker.units.qual.K;
+
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedList;
 
 public class Graph {
+    private int V; // no. of vertices
+    private LinkedList<Integer> adj[];
     private HashSet<Vertex> nodes;
 
-    public Graph(){
-        nodes = new HashSet<>();
+    public Graph(int v){
+        V = v;
+        adj = new LinkedList[v];
+
+        for (int i=0; i < v; i++){
+            adj[i] = new LinkedList<>();
+        }
+
+//        nodes = new HashSet<>();
     }
 
-    public boolean AddEdge(Vertex v1, Vertex v2, int weight){
-        return v1.getEdges().add(new Edge(v2, weight));
+//    public boolean AddEdge(Vertex v1, Vertex v2, int weight){
+//        return v1.getEdges().add(new Edge(v2, weight));
+//    }
+
+    public void addEdge(int v, int w){
+        adj[v].add(w);
+        adj[w].add(v);
     }
 
     public boolean AddNode(Vertex v){
@@ -27,11 +44,35 @@ public class Graph {
             System.out.print("\n");
         }
     }
+
+
+    public void BFS (int s){
+        boolean[] visited = new boolean[V];
+
+        LinkedList<Integer> queue = new LinkedList<Integer>();
+
+        visited[s] = true;
+        queue.add(s);
+
+        while (queue.size() != 0){
+            s = queue.poll();
+            System.out.print("{" + s + "}"  + " -> ");
+
+            for (int n : adj[s]) {
+
+                if (!visited[n]) {
+                    visited[n] = true;
+                    queue.add(n);
+                }
+            }
+        }
+
+    }
 }
 
 class Vertex{
     private String name;
-    private LinkedList<Edge> edgeList;
+    public LinkedList<Edge> edgeList;
 
     public Vertex(String name){
         this.name = name;
