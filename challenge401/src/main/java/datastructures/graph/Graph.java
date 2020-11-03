@@ -19,12 +19,7 @@ public class Graph {
             adj[i] = new LinkedList<>();
         }
 
-//        nodes = new HashSet<>();
     }
-
-//    public boolean AddEdge(Vertex v1, Vertex v2, int weight){
-//        return v1.getEdges().add(new Edge(v2, weight));
-//    }
 
     public void addEdge(int v, int w){
         adj[v].add(w);
@@ -44,6 +39,19 @@ public class Graph {
             System.out.print("\n");
         }
     }
+
+//    ---------- GET EDGES NOT WORKING YET -------------
+
+//    public void getEdges(Graph g1, String[] cityList){
+//        int acc = 0;
+//        int i = 0;
+//
+//        while (cityList[i+1]){
+//            if (cityList[i+1] ){
+//                acc += g1[cityList[i]][i+1]
+//            }
+//        }
+//    }
 
 
     public LinkedList<Integer> BFS (int s){
