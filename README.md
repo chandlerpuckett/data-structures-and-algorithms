@@ -11,3 +11,4 @@
 - [Challenge 33 : LeftJoin](challenge401/src/main/java/datastructures/leftjoin)
 - [Challenge 35 : Graph](challenge401/src/main/java/datastructures/graph)
 - [Challenge 36 : BFS Graph Traversal](challenge401/src/main/java/datastructures/graph/Graph.java)
+- [Challenge 37 : Get Edges of Graph](challenge401/src/main/java/datastructures/graph/Graph.java)
