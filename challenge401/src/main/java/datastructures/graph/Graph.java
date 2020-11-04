@@ -3,12 +3,12 @@ package datastructures.graph;
 import org.checkerframework.checker.units.qual.K;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Graph {
     private int V; // no. of vertices
-    private LinkedList<Integer> adj[]; // list of adjacent edges
+    public List<Integer> adj[]; // list of adjacent edges
     private HashSet<Vertex> nodes;
 
     public Graph(int v){
