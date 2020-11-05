@@ -13,4 +13,4 @@ Iterative approach using a Queue.
 - Space: O(n)
 
 ## Solution
-![whiteboard](../../../../../../DataStructures/src/main/resources/breadth-first.jpg)
+![whiteboard](../../../resources/breadth-first.jpg)

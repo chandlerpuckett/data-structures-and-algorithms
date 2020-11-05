@@ -7,7 +7,8 @@ will also append values into a specific location, either before
 or after a given value.
 
 ## Approach & Efficiency
-O(n)
+Time: O(1) <br>
+Space: O(n) <br>
 
 ## Solution
-![whiteboard](../../../../../../DataStructures/src/main/resources/aww-board.png)
+![whiteboard](../../resources/aww-board.png)

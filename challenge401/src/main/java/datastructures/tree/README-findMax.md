@@ -20,4 +20,4 @@ returns an `int` containing the maximum value found in the tree.
 - Space: O(1)
 
 ## Solution
-![whiteboard](../../../../../../DataStructures/src/main/resources/Challenge16.png)
+![whiteboard](../../../resources/Challenge16.png)
