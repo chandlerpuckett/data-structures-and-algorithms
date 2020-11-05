@@ -9,4 +9,4 @@ Time: O(1)
 Space: O(1)
 
 ## Solution
-![pseudo](../../../../../../DataStructures/src/main/resources/pseudo.png)
+![pseudo](../../../resources/pseudo.png)
