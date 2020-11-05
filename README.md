@@ -2,8 +2,8 @@
 
 ## Week 1 Array Shift & Binary Search 
 - [Challenge 1 : Reverse an Array](challenge401/src/main/java/codechallenges/arrayreverse)
-- [Challenge 2 : Array Shift](challenge401/src/main/java/codechallenges/utilities/ArrayShift.java)
-- [Challenge 3 : Binary Search](challenge401/src/main/java/codechallenges/utilities/BinarySearch.java)
+- [Challenge 2 : Array Shift](challenge401/src/main/java/codechallenges/arrayshift)
+- [Challenge 3 : Binary Search](challenge401/src/main/java/codechallenges/binarysearch)
 
 ## Week 2 Linked Lists
 - [Challenge 5 : Singly Linked List Implementation](challenge401/src/main/java/datastructures/linkedlist)
