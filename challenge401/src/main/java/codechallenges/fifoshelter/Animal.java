@@ -1,4 +1,4 @@
-package codechallenges.utilities;
+package codechallenges.fifoshelter;
 
 public class Animal {
     String name;

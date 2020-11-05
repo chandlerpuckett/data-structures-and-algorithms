@@ -11,12 +11,12 @@
 - [Challenge 7 : K-th Value from the End of a Linked List](challenge401/src/main/java/datastructures/linkedlist/LinkedList.java)
 - [Challenge 8 : Zip Two Linked Lists](challenge401/src/main/java/datastructures/linkedlist/LinkedList.java)
 
-## Week 3 Stacks
+## Week 3 Stacks & Queues
 - [Challenge 10 : Stack & Queue Implementation](challenge401/src/main/java/datastructures/stacksandqueues)
-- [Challenge 11 : Queue Using Two Stacks]()
-- [Challenge 12 : FIFO Animal Shelter](challenge401/src/main/java/codechallenges/utilities/App.java)
+- [Challenge 11 : Queue Using Two Stacks](challenge401/src/main/resources/READMEs/README-PsuedoQ.md)
+- [Challenge 12 : FIFO Animal Shelter](challenge401/src/main/java/codechallenges/fifoshelter)
 
-
+## Week 4
 - [Challenge 26 : Selection Sort](challenge401/src/main/java/codechallenges/utilities/SelectionSort.java)
 - [Challenge 27 : Merge Sort](challenge401/src/main/java/codechallenges/utilities/MergeSort.java)
 - [Challenge 28 : Quick Sort](challenge401/src/main/java/codechallenges/utilities/QuickSort.java)
