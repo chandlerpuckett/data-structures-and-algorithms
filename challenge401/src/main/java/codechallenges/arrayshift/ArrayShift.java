@@ -1,4 +1,4 @@
-package codechallenges.utilities;
+package codechallenges.arrayshift;
 
 
 public class ArrayShift {

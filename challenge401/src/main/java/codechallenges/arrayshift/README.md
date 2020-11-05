@@ -2,6 +2,8 @@
 This function takes in an array, and a value to be added to the array.
 It returns a new array with the value added at the middle index.
 
+[Code](ArrayShift.java) | [Test](../../../../test/java/codechallengestest/ArrayShiftTest.java)
+
 ## Challenge Description
 Given an array of Ints, we have to figure out how to find the middle of the array,
 create a new array with enough space to accommodate the existing values as well as the new one

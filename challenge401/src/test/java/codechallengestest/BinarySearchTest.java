@@ -1,6 +1,6 @@
 package codechallengestest;
 
-import codechallenges.utilities.BinarySearch;
+import codechallenges.binarysearch.BinarySearch;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
