@@ -3,35 +3,31 @@ package datastructures.linkedlist;
 
 public class LinkedList {
 
-    public Node head = null;
-    public Node tail = null;
+    public Node head;
+    public Node current;
 
-//    ----- head first -> adds value to front of linked list
+    public LinkedList() {}
+
+
+    //    ----- head first -> adds value to front of linked list
     public void insert (int newVal) {
 
         Node newNode = new Node (newVal);
+        newNode.next = head;
+        head = newNode;
 
-        if (this.head == null) {
-
-            this.head = newNode;
-            this.tail = this.head;
-
-        } else {
-            newNode.next = this.head;
-            this.head = newNode;
-        }
     }
+
 
 //    ----- checks for a value in the linked list -----
     public boolean includes (int value){
-        Node p1 = this.head;
+        current = head;
 
-        while (p1 != null){
-            if (p1.value == value){
-                return true;
-            } else {
-                p1 = p1.next;
+        while (current != null){
+            if (current.value == value){
+                return  true;
             }
+            current = current.next;
         }
         return false;
     }
@@ -44,11 +40,11 @@ public class LinkedList {
         if (this.head == null) {
 
             this.head = newNode;
-            this.tail = this.head;
+            this.current = this.head;
 
         } else {
 
-            this.tail.next = newNode;
+            this.current.next = newNode;
         }
     }
 
@@ -189,7 +185,7 @@ public class LinkedList {
         if (this.head == null){
             throw new Exception("nothing to remove");
         } else {
-            int valueToReturn = this.tail.value;
+            int valueToReturn = this.current.value;
             Node twoFromTheEnd = this.head;
 
             while (twoFromTheEnd.next.next != null){
@@ -197,21 +193,21 @@ public class LinkedList {
             }
 
             twoFromTheEnd.next = null;
-            this.tail = twoFromTheEnd;
+            this.current = twoFromTheEnd;
 
             return valueToReturn;
         }
     }
 
 //    overloaded toString to format output
-    public String toString () {
+    public String toString() {
 
         return toString(this.head);
 //      out {2} -> {6} -> {12} -> null
 
     }
 
-    private String toString (Node current){
+    private static String toString (Node current){
 //  base case -- stops
         if (current == null){
             return "null";
