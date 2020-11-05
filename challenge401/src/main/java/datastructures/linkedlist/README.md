@@ -1,6 +1,8 @@
 # Singly Linked List
 This challenge creates a singly linked list
 
+[Code](LinkedList.java) | [Tests](../../../../../../challenge401/src/test/java/datastructures/LinkedListTest.java)
+
 ## Challenge
 This challenge creates a singly linked list data structure with the methods: insert, includes, and toString.
 The `insert` method inserts an int value at the head of the list. <br>
