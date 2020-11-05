@@ -1,4 +1,4 @@
-package codechallenges.utilities;
+package codechallenges.multibracket;
 
 import java.util.HashMap;
 import java.util.Stack;

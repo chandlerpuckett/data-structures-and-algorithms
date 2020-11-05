@@ -1,6 +1,6 @@
 package codechallengestest;
 
-import codechallenges.utilities.MultiBracketValidation;
+import codechallenges.multibracket.MultiBracketValidation;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
