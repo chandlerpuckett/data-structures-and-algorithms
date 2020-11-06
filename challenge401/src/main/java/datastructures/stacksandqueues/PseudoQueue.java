@@ -1,6 +1,6 @@
 package datastructures.stacksandqueues;
 
-public class PsuedoQueue {
+public class PseudoQueue {
 
     Stack s1 = new Stack();
     Stack s2 = new Stack();

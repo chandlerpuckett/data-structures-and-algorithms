@@ -7,8 +7,8 @@
 
 ## Week 2 Linked Lists
 - [Challenge 5 : Singly Linked List Implementation](challenge401/src/main/java/datastructures/linkedlist)
-- [Challenge 6 : Linked List Insertions](challenge401/src/main/java/datastructures/linkedlist/LinkedList.java)
-- [Challenge 7 : K-th Value from the End of a Linked List](challenge401/src/main/java/datastructures/linkedlist/LinkedList.java)
+- [Challenge 6 : Linked List Insertions](challenge401/src/main/resources/READMEs/README-insertions.md)
+- [Challenge 7 : K-th Value from the End of a Linked List](challenge401/src/main/resources/READMEs/README-nthFromEnd.md)
 - [Challenge 8 : Zip Two Linked Lists](challenge401/src/main/java/datastructures/linkedlist/LinkedList.java)
 
 ## Week 3 Stacks & Queues

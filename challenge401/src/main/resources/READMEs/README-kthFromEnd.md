@@ -1,19 +1,18 @@
 # Challenge Summary
-Zip two linked lists
+Find ***kth*** number from end of list.
 
 [Code](../../../../../challenge401/src/main/java/datastructures/linkedlist/LinkedList.java) |
-[Tests](../../../../../challenge401/src/test/java/datastructures/ZipListTest.java)
+[Tests](../../../../../challenge401/src/test/java/datastructures/KthFromEndTest.java)
 
 ## Challenge Description
-This method accepts two linked lists as arguments & interleaves them 
-together, returning a linked list with alternating nodes from the input
+This method finds the kth number from the end of a singly linked list.
 
 ## Approach & Efficiency
 Time: O(n) <br>
-Space: O(1) 
+Space: O(n) 
 
 ## Solution
-![whiteboard](../../resources/ziplist.png)
+![whiteboard](../kthFromEnd.png)
 
 #### Checklist
  - [x] Top-level README “Table of Contents” is updated
@@ -26,4 +25,3 @@ Space: O(1)
      - [x] Summary, Description, Approach & Efficiency, Solution
      - [x] Link to code
      - [x] Picture of whiteboard
-
