@@ -15,7 +15,7 @@ public class App {
         System.out.println(l1.toString());
         System.out.println(l2.toString());
 
-        LinkedList zip = new LinkedList().merge(l1,l2);
+        LinkedList zip = new LinkedList().zipTwoLists(l1,l2);
 
         System.out.println(zip.toString());
     }

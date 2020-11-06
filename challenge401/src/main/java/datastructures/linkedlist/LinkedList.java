@@ -117,7 +117,7 @@ public class LinkedList {
 
 
 //    interleaves two lists, alternating nodes like a zipper
-    public LinkedList merge (LinkedList list1, LinkedList list2){
+    public LinkedList zipTwoLists(LinkedList list1, LinkedList list2){
 
         if(list1.head == null){
             return list2;
@@ -206,7 +206,7 @@ public class LinkedList {
     private static String toString (Node current){
 //  base case -- stops
         if (current == null){
-            return "null";
+            return null;
         }
         return String.format("{%d} -> %s", current.value, toString(current.next));
 
