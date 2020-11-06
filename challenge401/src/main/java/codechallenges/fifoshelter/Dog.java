@@ -1,6 +1,4 @@
-package codechallenges.utilities;
-
-import codechallenges.fifoshelter.Animal;
+package codechallenges.fifoshelter;
 
 public class Dog extends Animal {
     public Dog(String name) {

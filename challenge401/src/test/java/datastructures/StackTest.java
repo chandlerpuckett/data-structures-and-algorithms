@@ -24,7 +24,7 @@ public class StackTest {
 
         Stack stack1 = new Stack();
         stack1.push(5);
-        int answer = stack1.peek();
+        int answer = (int) stack1.peek();
 
         assertEquals(5,answer);
     }

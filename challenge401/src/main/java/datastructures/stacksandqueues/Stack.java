@@ -1,40 +1,40 @@
 package datastructures.stacksandqueues;
 
-public class Stack <Generic> {
+public class Stack<T> {
 
-    private Node top;
-    private Node bottom;
+    private Node<T> top;
 
     public Stack() {
-
     }
 
-    public void push (int value){
+    public void push (T value){
 //        adds a new node with -- value -- to the top
 //        of the stack with an O(1) time performance
 
-        Node node = new Node (value);
+        Node<T> node = new Node<>(value);
         node.next = top;
         top = node;
     }
 
-    public int pop () throws Exception {
+    public T pop () throws Exception {
 //        removes node from top -> returns value
 //        should raise exception when called on empty stack
 
-        if (isEmpty()){throw new Exception("EMPTY STACK");}
+        if (isEmpty()){
+            throw new Exception("EMPTY STACK");
+        }
 
-        int data = top.value;
+        T data = (T) top.value;
         top = top.next;
 
         return data;
     }
 
-    public int peek () throws Exception {
+    public T peek () throws Exception {
 //        return value from top of the stack w/out removing
 
         if (isEmpty()){throw new Exception("EMPTY STACK");}
-        return top.value;
+        return (T) top.value;
     }
 
     public boolean isEmpty () throws Exception {
@@ -54,12 +54,12 @@ public class Stack <Generic> {
 
     }
 
-    private String toString (datastructures.stacksandqueues.Node current){
+    private String toString (Node<T> current){
 //  base case -- stops
         if (current == null){
-            return "null";
+            return null;
         }
-        return String.format("{%d} -> %s", current.value, toString(current.next));
+        return String.format("{%s} -> %s", current.value, toString(current.next));
 
     }
 }

@@ -17,11 +17,11 @@ public class PseudoQueue {
             }
 
             while (!s1.isEmpty()){
-                int p = s1.pop();
+                int p = (int) s1.pop();
                 s2.push(p);
             }
         }
-        return s2.pop();
+        return (int) s2.pop();
     }
 
 
@@ -35,7 +35,7 @@ public class PseudoQueue {
 
     }
 
-    private String toString (datastructures.stacksandqueues.Node current){
+    private String toString (Node current){
 //  base case -- stops
         if (current == null){
             return "null";
