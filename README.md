@@ -23,6 +23,7 @@
 - [Challenge 17 : Breadth First Traversal](challenge401/src/main/resources/READMEs/README-breadthFirst.md)
 - [Challenge 18 : FizzBuzz Tree](challenge401/src/main/java/codechallenges/fizzbuzztree)
 
+## Week 6 Sorting Algorithms
 - [Challenge 26 : Selection Sort](challenge401/src/main/java/codechallenges/utilities/SelectionSort.java)
 - [Challenge 27 : Merge Sort](challenge401/src/main/java/codechallenges/utilities/MergeSort.java)
 - [Challenge 28 : Quick Sort](challenge401/src/main/java/codechallenges/utilities/QuickSort.java)
