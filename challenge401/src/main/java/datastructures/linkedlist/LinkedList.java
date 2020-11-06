@@ -69,24 +69,28 @@ public class LinkedList {
     }
 
 //    ------ find kth value from end of singly linked list ----- //
-    public int nthValueFromEnd (int n) throws Exception {
-        Node p1 = head;
-        Node p2 = head;
+    public int kthValueFromEnd(int n) {
+        int lengthOfList = 0;
+        Node current = head;
 
-        for (int j=0; j < n; ++j){
-            if (p2 == null){
-                throw new Exception("Exception");
-            }
-
-            p2 = p2.next;
+        while(current.next != null){
+            lengthOfList += 1;
+            current = current.next;
         }
 
-        while (p2.next != null){
-            p1 = p1.next;
-            p2 = p2.next;
+        if(n > lengthOfList){
+            throw new IllegalArgumentException("The kth value is greater than the length of the linked list");
         }
 
-        return p1.value;
+        int frontIndex = lengthOfList - n;
+        current = head;
+
+        while(frontIndex != 0){
+            current = current.next;
+            frontIndex -= 1;
+        }
+
+        return current.value;
     }
 
 
@@ -113,43 +117,35 @@ public class LinkedList {
 
 
 //    interleaves two lists, alternating nodes like a zipper
-    public LinkedList zipTwoLists (LinkedList l1, LinkedList l2){
+    public LinkedList merge (LinkedList list1, LinkedList list2){
 
-       LinkedList result = new LinkedList();
-
-       Node n1 = l1.head;
-       Node n2 = l2.head;
-
-       result.insert(interleave(n1,n2).value);
-       return result;
-
-    }
-
-    public Node interleave (Node n1, Node n2){
-
-        if (n1 == null){return n2;}
-        if (n2 == null){return n1;}
-
-//  create new linked list in here then return that linked list
-        Node result = n1;
-
-        while (n1 != null && n2 != null){
-            Node temp1 = n1.next;
-            Node temp2 = n2.next;
-
-            if (temp1.next != null){
-                n2.next = temp1.next;
-            }
-
-            temp1.next = n2;
-
-            n1 = temp1;
-            n2 = temp2;
+        if(list1.head == null){
+            return list2;
         }
 
-        return result;
+        Node p1 = list1.head.next;
+        Node p2 = list1.head;
+        list2.current = list2.head;
 
+        while(p1 != null){
+
+            if(list2.current == null){
+                return list1;
+            }
+
+            list2.head = list2.current.next;
+            p2.next = list2.current;
+            list2.current.next = p1;
+
+            list2.current = list2.head;
+            p2 = p1;
+            p1 = p1.next;
+        }
+
+        p2.next = list2.current;
+        return list1;
     }
+
 
 //    RECURSIVE MERGE
     public static Node mergeRecursive (LinkedList l1, LinkedList l2){

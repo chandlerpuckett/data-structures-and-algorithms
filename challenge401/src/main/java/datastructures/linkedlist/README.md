@@ -1,7 +1,8 @@
 # Singly Linked List
 This challenge creates a singly linked list
 
-[Code](LinkedList.java) | [Tests](../../../../../../challenge401/src/test/java/datastructures/LinkedListTest.java)
+[Code](LinkedList.java) | 
+[Tests](../../../../../../challenge401/src/test/java/datastructures/LinkedListTest.java)
 
 ## Challenge
 This challenge creates a singly linked list data structure with the methods: insert, includes, and toString.
@@ -21,5 +22,5 @@ Insert Space: O(n)<br>
 --------------------------
 
 [Challenge 6 : Linked List Insertion Whiteboard](../../../resources/READMEs/README-insertions.md)<br>
-[Challenge 7 : Kth Value from end Whiteboard](../../../resources/READMEs/README-nthFromEnd.md)<br>
+[Challenge 7 : Kth Value from end Whiteboard](../../../resources/READMEs/README-kthFromEnd.md)<br>
 [Challenge 8 : Zip two Lists Whiteboard](../../../resources/READMEs/README-interleave.md)<br>
