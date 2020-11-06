@@ -3,10 +3,8 @@ package datastructures.stacksandqueues;
 public class Stack<T> {
 
     private Node<T> top;
-    private Node<T> bottom;
 
     public Stack() {
-
     }
 
     public void push (T value){
@@ -56,10 +54,10 @@ public class Stack<T> {
 
     }
 
-    private String toString (datastructures.stacksandqueues.Node current){
+    private String toString (Node<T> current){
 //  base case -- stops
         if (current == null){
-            return "null";
+            return null;
         }
         return String.format("{%s} -> %s", current.value, toString(current.next));
 

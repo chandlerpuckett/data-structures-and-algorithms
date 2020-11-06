@@ -35,7 +35,7 @@ public class PseudoQueue {
 
     }
 
-    private String toString (datastructures.stacksandqueues.Node current){
+    private String toString (Node current){
 //  base case -- stops
         if (current == null){
             return "null";

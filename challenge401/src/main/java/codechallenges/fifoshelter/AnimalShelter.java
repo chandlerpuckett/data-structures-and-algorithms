@@ -4,47 +4,62 @@ import datastructures.stacksandqueues.Queue;
 
 public class AnimalShelter extends Queue {
 
-    Queue cat;
-    Queue dog;
+    private Queue<Animal> shelter = new Queue<>();
 
 //    ----- constructor -----
-    public AnimalShelter(Queue cat, Queue dog) {
-        this.cat = cat;
-        this.dog = dog;
+
+    public AnimalShelter() {
     }
 
-    public void enQ (Cat cat){
-        this.cat.enQueue(cat);
+//    ---- EN Q ----
+    public void enQ (Animal animal){
+        shelter.enQueue(animal);
     }
 
-    public class Node <T> {
+//    ---- DE Q ----
+    public Animal deQ (String animal) throws Exception {
+        if (animal.equalsIgnoreCase("dog"))
+            return getDog();
+        else if (animal.equalsIgnoreCase("cat"))
+            return getCat();
+        else
+            return null;
+    }
 
-        T value;
-        Node <T> next;
-
-        Node (T value) {
-            this.value = value;
+    private Animal getDog() throws Exception {
+        Animal animal = null;
+        Queue<Animal> temp = new Queue();
+        while (!shelter.isEmpty()) {
+            if (shelter.peek().getClass().equals(Dog.class) && animal == null)
+                animal = shelter.deQueue();
+            else
+                temp.enQueue(shelter.deQueue());
+        }
+        while (!temp.isEmpty()) {
+            shelter.enQueue(temp.deQueue());
         }
 
+        return animal;
     }
 
-//    public String toString () {
-//
-////        return toString(this.front.value);
-////      out {2} -> {6} -> {12} -> null
-//
-//    }
-
-    private String toString (Node current){
-//  base case -- stops
-
-        if (current == null){
-            return "null";
+    private Animal getCat() throws Exception {
+        Animal animal = null;
+        Queue<Animal> temp = new Queue();
+        while (!shelter.isEmpty()) {
+            if (shelter.peek().getClass().equals(Cat.class) && animal == null)
+                animal = shelter.deQueue();
+            else
+                temp.enQueue(shelter.deQueue());
+        }
+        while (!temp.isEmpty()) {
+            shelter.enQueue(temp.deQueue());
         }
 
-        return String.format("{%s} -> %s", current.value.getClass().getSimpleName(), toString(current.next));
-
+        return animal;
     }
+
+
+
 }
 
 

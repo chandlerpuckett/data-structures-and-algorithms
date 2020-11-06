@@ -3,7 +3,7 @@ package datastructures.stacksandqueues;
 public class Queue<T> {
 
     private Node<T> front;
-    private Node<T> back;
+    private Node<T> rear;
     private Node<T> temp;
 
     public Queue() {
@@ -13,14 +13,12 @@ public class Queue<T> {
 //        adds new node with value to the BACK of the queue
 //        with an O(1) time
 
-        temp = (Node<T>) new Node(value);
-
-        if (back == null){
-            front = temp;
-        } else {
-            back.next = temp;
-        }
-        back = temp;
+        Node<T> node = new Node<>(value);
+        if (isEmpty())
+            front = node;
+        else
+            rear.next = node;
+        rear = node;
     }
 
     public T deQueue () throws Exception {
@@ -32,7 +30,7 @@ public class Queue<T> {
         } else {
             temp = front;
             front = front.next;
-            return (T) temp.value;
+            return temp.value;
         }
     }
 
@@ -58,18 +56,29 @@ public class Queue<T> {
 //    overloaded toString to format output
     public String toString () {
 
-        return toString(this.front);
+//        return toString(this.front);
 //      out {2} -> {6} -> {12} -> null
 
-    }
-
-    private String toString (datastructures.stacksandqueues.Node current){
-//  base case -- stops
-        if (current == null){
-            return "null";
+        StringBuilder sb = new StringBuilder();
+        Node<T> current = this.front;
+        while (current != null){
+            sb.append("{");
+            sb.append(current.value);
+            sb.append("} -> ");
+            current = current.next;
         }
-        return String.format("{%s} -> %s", current.value, toString(current.next));
+        sb.append("null");
+        return sb.toString();
 
     }
+
+//    private String toString (Node<T> current){
+////  base case -- stops
+//        if (current == null){
+//            return null;
+//        }
+//        return String.format("{%s} -> %s", current.value, toString(current.next));
+//
+//    }
 
 }
