@@ -1,6 +1,9 @@
 # Challenge Summary
 Write a method that finds the maximum value in a Binary tree
 
+[Code](../../../../../challenge401/src/main/java/datastructures/tree/BinaryTree.java) |
+[Tests](../../../../../challenge401/src/test/java/datastructures/FindMaxValTest.java)
+
 ## Challenge Description
 Without using any of the previously written or built in methods, write a function that
 returns an `int` containing the maximum value found in the tree.
@@ -20,4 +23,4 @@ returns an `int` containing the maximum value found in the tree.
 - Space: O(1)
 
 ## Solution
-![whiteboard](../../../resources/Challenge16.png)
+![whiteboard](../Challenge16.png)

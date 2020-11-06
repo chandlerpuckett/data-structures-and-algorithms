@@ -1,6 +1,9 @@
 # Challenge Summary
 Fizzbuzz Tree
 
+[Code](FizzBuzzTree.java) |
+[Tests]()
+
 ## Challenge Description
 Traverse a `k-ary tree`, 
 - if divisible by 3 return "Fizz"

@@ -2,6 +2,9 @@
 Without using built in Java methods write a breadth first algorithm to traverse
 a Binary Tree
 
+[Code](../../../../../challenge401/src/main/java/datastructures/tree/BinaryTree.java) |
+[Tests]()
+
 ## Challenge Description
 Expanding on the Binary Tree class, implement a method that uses a "breadth-first" approach
 to traversing a Binary Tree & returning an array of values.
@@ -13,4 +16,4 @@ Iterative approach using a Queue.
 - Space: O(n)
 
 ## Solution
-![whiteboard](../../../resources/breadth-first.jpg)
+![whiteboard](../breadth-first.jpg)

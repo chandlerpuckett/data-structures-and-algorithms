@@ -63,7 +63,7 @@ public class BinaryTree {
     }
 
 //    ----- Breadth First -----
-    public void bfsTraverse(){
+    public ArrayList bfsTraverse(){
         ArrayList<Integer> arr = new ArrayList<>();
 
         Queue<Node> queue = new LinkedList<Node>();
@@ -75,7 +75,7 @@ public class BinaryTree {
             if(node.left != null) queue.add(node.left);
             if(node.right != null) queue.add(node.right);
         }
-        System.out.println(arr);
+        return arr;
     }
 
 
