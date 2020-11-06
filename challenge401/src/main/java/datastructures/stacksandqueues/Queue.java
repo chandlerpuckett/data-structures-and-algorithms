@@ -1,53 +1,51 @@
 package datastructures.stacksandqueues;
 
-public class Queue {
+public class Queue<T> {
 
-    private Node front;
-    private Node tail;
+    private Node<T> front;
+    private Node<T> back;
+    private Node<T> temp;
 
     public Queue() {
     }
 
-    public void enQueue (int value){
+    public void enQueue (T value){
 //        adds new node with value to the BACK of the queue
 //        with an O(1) time
 
-        Node newNode = new Node(value);
+        temp = (Node<T>) new Node(value);
 
-        if (front == null){
-            front = newNode;
+        if (back == null){
+            front = temp;
+        } else {
+            back.next = temp;
         }
-
-        if (tail != null){
-            tail.next = newNode;
-        }
-
-        tail = newNode;
+        back = temp;
     }
 
-    public int deQueue () throws Exception {
+    public T deQueue () throws Exception {
 //        removes node from front of queue and returns value
 //        raises exception when called on empty queue
 
-        if (isEmpty()){throw new Exception("EMPTY: DOES NOT EXIST");}
-
-        int value = front.value;
-        front = front.next;
-
-        if (front == null){
-            tail = null;
+        if (isEmpty()){
+            throw new Exception("EMPTY: DOES NOT EXIST");
+        } else {
+            temp = front;
+            front = front.next;
+            return (T) temp.value;
         }
-
-        return value;
     }
 
-    public int peek () throws Exception {
+    public T peek () throws Exception {
 //        returns value of the node located in front of the queue
 //        does not alter / remove
 //        raises exception when empty
 
-        if (front == null) {throw new Exception("EMPTY: DOES NOT EXIST");}
-        return front.value;
+        if (front == null){
+            throw new Exception("EMPTY: DOES NOT EXIST");
+        } else {
+            return (T) front.value;
+        }
     }
 
     public boolean isEmpty () {
@@ -70,7 +68,7 @@ public class Queue {
         if (current == null){
             return "null";
         }
-        return String.format("{%d} -> %s", current.value, toString(current.next));
+        return String.format("{%s} -> %s", current.value, toString(current.next));
 
     }
 

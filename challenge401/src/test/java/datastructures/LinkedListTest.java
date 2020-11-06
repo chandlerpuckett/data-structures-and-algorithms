@@ -13,13 +13,13 @@ public class LinkedListTest {
     public void emptyList(){
         LinkedList emptyList = new LinkedList();
 
-        assertEquals("null",emptyList.toString());
+        assertEquals(null,emptyList.toString());
     }
 
     @Test
     public void insertAtHead(){
         LinkedList list1 = new LinkedList();
-        assertEquals("null", list1.toString());
+        assertEquals(null, list1.toString());
 
         list1.insert(5);
         list1.insert(6);

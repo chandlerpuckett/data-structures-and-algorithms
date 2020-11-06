@@ -1,23 +1,20 @@
 package codechallenges.fifoshelter;
 
-public class AnimalShelter {
+import datastructures.stacksandqueues.Queue;
 
-    Node<Animal> front;
-    Node<Animal> tail;
+public class AnimalShelter extends Queue {
 
-    public void enQ (Animal animal){
+    Queue cat;
+    Queue dog;
 
-        Node<Animal> newNode = new Node<Animal> (animal);
+//    ----- constructor -----
+    public AnimalShelter(Queue cat, Queue dog) {
+        this.cat = cat;
+        this.dog = dog;
+    }
 
-        if (tail != null){
-            tail.next = newNode;
-        }
-
-        tail = newNode;
-
-        if (front == null){
-            front = newNode;
-        }
+    public void enQ (Cat cat){
+        this.cat.enQueue(cat);
     }
 
     public class Node <T> {
@@ -31,12 +28,12 @@ public class AnimalShelter {
 
     }
 
-    public String toString () {
-
-        return toString(this.front);
-//      out {2} -> {6} -> {12} -> null
-
-    }
+//    public String toString () {
+//
+////        return toString(this.front.value);
+////      out {2} -> {6} -> {12} -> null
+//
+//    }
 
     private String toString (Node current){
 //  base case -- stops

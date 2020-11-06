@@ -1,10 +1,11 @@
 package datastructures.stacksandqueues;
 
-public class Node {
-    public int value;
+public class Node<T> {
+    public T value;
     Node next;
 
-    Node(int value) {
+    public Node(T value) {
+        this.next = null;
         this.value = value;
     }
 

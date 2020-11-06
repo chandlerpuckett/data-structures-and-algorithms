@@ -8,13 +8,14 @@
 ## Week 2 Linked Lists
 - [Challenge 5 : Singly Linked List Implementation](challenge401/src/main/java/datastructures/linkedlist)
 - [Challenge 6 : Linked List Insertions](challenge401/src/main/resources/READMEs/README-insertions.md)
-- [Challenge 7 : K-th Value from the End of a Linked List](challenge401/src/main/resources/READMEs/README-nthFromEnd.md)
+- [Challenge 7 : K-th Value from the End of a Linked List](challenge401/src/main/resources/READMEs/README-kthFromEnd.md)
 - [Challenge 8 : Zip Two Linked Lists](challenge401/src/main/java/datastructures/linkedlist/LinkedList.java)
 
 ## Week 3 Stacks & Queues
 - [Challenge 10 : Stack & Queue Implementation](challenge401/src/main/java/datastructures/stacksandqueues)
-- [Challenge 11 : Queue Using Two Stacks](challenge401/src/main/resources/READMEs/README-PsuedoQ.md)
+- [Challenge 11 : PseudoQueue Using Two Stacks](challenge401/src/main/resources/READMEs/README-PsuedoQ.md)
 - [Challenge 12 : FIFO Animal Shelter](challenge401/src/main/java/codechallenges/fifoshelter)
+- [Challenge 13 : Multi-Bracket Validation](challenge401/src/main/java/codechallenges/multibracket)
 
 ## Week 4
 - [Challenge 26 : Selection Sort](challenge401/src/main/java/codechallenges/utilities/SelectionSort.java)
