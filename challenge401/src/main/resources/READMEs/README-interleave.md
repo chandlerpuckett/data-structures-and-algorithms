@@ -2,7 +2,7 @@
 Zip two linked lists
 
 [Code](../../../../../challenge401/src/main/java/datastructures/linkedlist/LinkedList.java) |
-[Tests]()
+[Tests](../../../../../challenge401/src/test/java/datastructures/ZipListTest.java)
 
 ## Challenge Description
 This method accepts two linked lists as arguments & interleaves them 
