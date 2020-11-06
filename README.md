@@ -17,7 +17,12 @@
 - [Challenge 12 : FIFO Animal Shelter](challenge401/src/main/java/codechallenges/fifoshelter)
 - [Challenge 13 : Multi-Bracket Validation](challenge401/src/main/java/codechallenges/multibracket)
 
-## Week 4
+## Week 4 Trees
+- [Challenge 15 : Binary Tree & BST Implementation](challenge401/src/main/java/datastructures/tree)
+- [Challenge 16 : Max Value in Binary Tree](challenge401/src/main/resources/READMEs/README-findMax.md)
+- [Challenge 17 : Breadth First Traversal](challenge401/src/main/resources/READMEs/README-breadthFirst.md)
+- [Challenge 18 : FizzBuzz Tree](challenge401/src/main/java/codechallenges/fizzbuzztree)
+
 - [Challenge 26 : Selection Sort](challenge401/src/main/java/codechallenges/utilities/SelectionSort.java)
 - [Challenge 27 : Merge Sort](challenge401/src/main/java/codechallenges/utilities/MergeSort.java)
 - [Challenge 28 : Quick Sort](challenge401/src/main/java/codechallenges/utilities/QuickSort.java)
