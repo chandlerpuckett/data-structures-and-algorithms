@@ -13,7 +13,9 @@ public class BinarySearchTree extends BinaryTree {
     private Node addRecursive(Node current, int value) {
 
         // if current node is empty, return new Node(value)
-        if (current == null){return new Node(value);}
+        if (current == null){
+            return new Node(value);
+        }
 
         if (value < current.value){
             current.left = addRecursive(current.left,value);
