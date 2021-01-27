@@ -15,11 +15,11 @@ Time: O(n) <br>
 Space: O(n)
 
 ## API
-`createTree` - instantiates a tree with pre-set values
-`add` - adds a value to the tree
-`inOrder` - performs an in order traversal & returns an Array List of integers
-`perOrder` - performs a pre order traversal & returns an Array List of integers
-`postOrder` - performs a post order traversal & returns an Array List of integers
+`createTree` - instantiates a tree with pre-set values<br>
+`add` - adds a value to the tree<br>
+`inOrder` - performs an in order traversal & returns an Array List of integers<br>
+`perOrder` - performs a pre order traversal & returns an Array List of integers<br>
+`postOrder` - performs a post order traversal & returns an Array List of integers<br>
 
 ## Operation
 - program is operated in App.java or by instantiating a `BinaryTree` object
